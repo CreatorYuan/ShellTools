@@ -1,0 +1,14 @@
+---
+- name: remove firewalld
+  hosts: all
+  tasks:
+    - name: uninstall firewalld
+      yum:
+        name: firewalld
+        state: absent
+    - name: configure selinux file
+      lineinfile:
+        path: /etc/selinux/config
+        regexp: '^SELINUX='
+        line: 'SELINUX=disabled'
+

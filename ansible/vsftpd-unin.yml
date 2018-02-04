@@ -1,0 +1,8 @@
+---
+- name: remove vsftpd
+  hosts: all
+  tasks:
+    - name: uninstall vsftpd
+      yum:
+        name: vsftpd
+        state: absent
