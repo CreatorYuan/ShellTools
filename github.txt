@@ -11,7 +11,7 @@ Ubuntu 安装 Git：  apt-get install git
 　　配置 Git 用户信息：
 
  git config --global user.name "CreatorYuan"
- git config --global user.email "724991661@qq.com" "CreatorYuan@github.com"
+ git config --global user.email "724991661@qq.com"
 二、开启 SSH 服务
 Ubuntu 安装 SSH：  apt-get install ssh  
 
@@ -19,7 +19,7 @@ Ubuntu 安装 SSH：  apt-get install ssh
 三、生成 SSH KEY
 使用 ls -al ~/.ssh 命令查看 ssh key 是否存在，若存在则忽略这一步
 
-　　生成 SSH KEY：  ssh-keygen -t rsa -C "woider@gmail.com"  
+　　生成 SSH KEY：  ssh-keygen -t rsa -C "724991661@qq.com"  
 一、查看 SSH KEY
 进入 /root/.ssh 目录，查看 id_rsa 和 id_rsa.pub 文件：
 
@@ -130,13 +130,10 @@ test path
 .git/       github.txt  
  git add github.txt 
  git commit -m "first commit"
-[master cda4cbb] first commit
+first commit
  1 file changed, 27 insertions(+)
  git remote add origin https://github.com/CreatorYuan/ShellTools.git
  git push -u origin master
-Username for 'https://github.com': CreatorYuan
-Password for 'https://CreatorYuan@github.com': 
-
 分支 master 设置为跟踪来自 origin 的远程分支 master。
 
 
